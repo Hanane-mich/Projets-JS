@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b1b3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.form-box {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.form-box .icon {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.form-box .icon img {
+  width: 40px;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0b1b3f;
+}
+
+.form-box label {
+  font-size: 14px;
+  color: #333;
+  margin-top: 15px;
+  display: block;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.form-box textarea {
+  resize: none;
+}
+
+.form-box button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0b1b3f;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-box button:hover {
+  background: #2b3a67;
+}

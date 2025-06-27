@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="contactForm" class="form-box">
+      <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="send">
+      </div>
+      <h2>Contact Us</h2>
+
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label>Phone No.</label>
+      <input type="tel" id="phone" placeholder="123 456 7890" required>
+
+      <label>Email Id</label>
+      <input type="email" id="email" placeholder="Enter email" required>
+
+      <label>Your Message</label>
+      <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

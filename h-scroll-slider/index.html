@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Scroll Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="gallery-wrap">
+    <button id="backBtn">&#8678;</button>
+
+    <div class="gallery">
+      <div>
+        <span><img src="images/image1.jpg" alt=""></span>
+        <span><img src="images/image2.jpg" alt=""></span>
+        <span><img src="images/image3.jpg" alt=""></span>
+      </div>
+      <div>
+        <span><img src="images/image4.jpg" alt=""></span>
+        <span><img src="images/image5.jpg" alt=""></span>
+        <span><img src="images/image6.jpg" alt=""></span>
+      </div>
+    </div>
+
+    <button id="nextBtn">&#8680;</button>
+  </div>
+
+  <script >
+    const scrollContainer = document.querySelector(".gallery");
+    const backBtn = document.getElementById("backBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    // Scroll avec la souris (horizontal)
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    // Boutons gauche et droite
+    nextBtn.addEventListener("click", () => {
+      scrollContainer.scrollLeft += 900;
+    });
+
+    backBtn.addEventListener("click", () => {
+      scrollContainer.scrollLeft -= 900;
+    });
+
+  </script>
+</body>
+</html>

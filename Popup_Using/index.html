@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmation Popup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <form id="myForm">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup-container" id="popup">
+    <div class="popup-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="check" />
+      <h2>Thank You!</h2>
+      <p>Your details have been successfully submitted. Thanks!</p>
+      <button id="okBtn">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

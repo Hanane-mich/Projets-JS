@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #da2b2b;
+}
+
+.selector {
+  width: 260px;
+  position: relative;
+}
+
+/* SelectField fusionné */
+#selectField {
+  background: rgb(255, 255, 255); 
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+#selectField img {
+  width: 12px; /* Plus petit que 20px */
+  transition: transform 0.5s ease;
+}
+
+#arrowIcon.rotate {
+  transform: rotate(180deg);
+}
+
+ul {
+  list-style: none;
+  margin-top: 8px;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  max-height: 200px; 
+  overflow-y: auto;
+}
+
+ul.hide {
+  display: none;
+}
+
+.options {
+  width: 100%;
+  padding: 15px 0 15px 70px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.options img {
+  position: absolute;
+  left: 15px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.options:hover {
+  background-color: rgba(236, 64, 122, 0.2);
+}

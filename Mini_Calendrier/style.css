@@ -1,0 +1,36 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh; background: #f0f0f0;
+}
+.calendar {
+  width: 350px; background: white;
+  border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.month {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px;
+  background: #4b79a1; color: white; border-radius: 10px 10px 0 0;
+}
+.month i {
+  cursor: pointer; font-size: 1.5rem;
+}
+.date h1 { font-size: 1.3rem; }
+.date p { font-size: 0.9rem; }
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+.weekdays { background: #e0e0e0; padding: 10px 0; }
+.weekdays div { font-weight: bold; }
+.days div {
+  padding: 15px 0; border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+.days div:nth-child(7n) { border-right: none; }
+.days div:hover { background: #f0f8ff; }
+
+.today { background: #4b79a1; color: white; border-radius: 5px; }
